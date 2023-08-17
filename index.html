@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/32x32.png" type="image/x-icon">
+
+    <!--=============== REMIX ICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles_hidden.css">
+
+    <title>SpectraMind AI</title>
+</head>
+
+<body>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <img src="assets/img/logo-72x72.png" alt="">
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#specs" class="nav__link">Services</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#case" class="nav__link">Contact Us</a>
+                    </li>
+
+
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-function-line"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!--=============== HOME ===============-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div>
+                    <img src="assets/img/mainHome.png" alt="" class="home__img">
+                </div>
+
+                <div class="home__data">
+                    <div class="home__header">
+                        <h1 class="home__title">Lume</h1>
+                        <h2 class="home__subtitle">SpectraMind AI</h2>
+                    </div>
+
+                    <div class="home__footer">
+                        <h3 class="home__title-description">
+                            Elevate Your Business with State-of-the-Art AI Solutions</h3>
+
+                        <a href="#case" class="button button--flex">
+                            <span class="button--flex">
+                                Lets Talk
+                            </span>
+
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== ABOUT ===============-->
+        <section class="discount section">
+            <div class="about__container container">
+                <div class="discount__animate">
+                    <h2 class="about__title">ABOUT US</h2>
+                    <p class="about__description">Experience the power of Spectramind AI, your unwavering ally in AI
+                        advancement. From initial ideation to full implementation, we guide you through uncharted paths.
+                        With expertise spanning startups to enterprises, we craft cutting-edge AI solutions for
+                        streamlined operations and growth. Founder Safi Ullah's vision drives us to mold your concepts
+                        into tailored solutions, harnessing cross-industry proficiency. Join us to amplify your triumphs
+                        with pioneering products.</p>
+
+                </div>
+
+
+            </div>
+        </section>
+
+        <!--=============== SPECS ===============-->
+        <section class="specs section grid">
+            <h2 class="section__title section__title-gradient">Transform</h2>
+
+            <div class="specs__container container grid">
+                <div class="specs__content grid">
+                    <div class="specs__data">
+                        <h3 class="specs__title">Innovate</h3>
+                        <h2 class="specs__subtitle">Transforming Realities</h2>
+                    </div>
+
+                    <div class="specs__data">
+                        <h3 class="specs__title">Automate</h3>
+                        <h2 class="specs__subtitle">Automate your tasks</h2>
+
+                    </div>
+                    <div class="specs__data">
+                        <h3 class="specs__title">Optimize</h3>
+                        <h2 class="specs__subtitle">Optimise your workflows</h2>
+
+                    </div>
+                    <div class="specs__data">
+                        <h3 class="specs__title">Elevate</h3>
+                        <h2 class="specs__subtitle">Elevate your business</h2>
+                    </div>
+                </div>
+                <div>
+                    <img src="assets/img/specs1.png" alt="" class="specs__img">
+                </div>
+            </div>
+        </section>
+
+        <!--=============== PRODUCTS ===============-->
+        <section class="products section" id="specs">
+            <h2 class="section__title section__title-gradient products__line">
+                Choose <br> Our Services
+            </h2>
+
+            <div class="products__container  grid">
+                <article class="products__card">
+
+                    <h3 class="products__title product__text">AI-Powered Solutions</h3>
+                    <span class="products__price product__text">Chatbot development</span>
+                    <span class="products__price product__text">Content Automation</span>
+                    <span class="products__price product__text">AI-Powered Customer Support</span>
+                </article>
+                <article class="products__card">
+
+                    <h3 class="products__title product__text">Conversational AI Solutions</h3>
+                    <span class="products__price product__text">Personalized Cold Outreach System</span>
+                    <span class="products__price product__text">Onboarding Chat Assistant</span>
+                    <span class="products__price product__text">Workflow Automations</span>
+                </article>
+
+                </article>
+
+            </div>
+        </section>
+    </main>
+    <!--=============== Contact US ===============-->
+    <!--=============== Contact US ===============-->
+    <section class="contact section" id="case">
+        <div class="contact__container container grid">
+            <div class="contact__info">
+                <h2 class="section__title section__title-gradient products__line">
+                    Lets Get in <br> Touch
+                </h2>
+
+
+            </div>
+
+            <form class="contact__form" onsubmit="sendEmail(); reset(); return false;">
+                <div class="contact__input-container">
+                    <label for="name" class="contact__label">Name</label>
+                    <input type="text" id="name" name="name" class="contact__input" required>
+                </div>
+
+                <div class="contact__input-container">
+                    <label for="email" class="contact__label">Email</label>
+                    <input type="email" id="email" name="email" class="contact__input" required>
+                </div>
+
+                <div class="contact__input-container">
+                    <label for="subject" class="contact__label">Subject</label>
+                    <input type="text" id="subject" name="subject" class="contact__input" required>
+                </div>
+
+                <div class="contact__input-container">
+                    <label for="message" class="contact__label">How we can help you?</label>
+                    <textarea id="message" name="message" class="contact__textarea" rows="4" required></textarea>
+                </div>
+
+                <div class="contact__input-container">
+                    <label for="budget" class="contact__label">What is your budget for this project</label>
+                    <select id="budget" name="budget" class="contact__select ">
+
+                        <option value="less than $5000">less than $5000</option>
+                        <option value="$5000-$10,000">$5000 - $10,000</option>
+                        <option value="$10,000-$20,000">$10,000 - $20,000</option>
+                        <option value="$20,000-$40,000">$20,000 - $40,000</option>
+                        <option value="$$40,000+">$40,000 +</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="button button--flex contact__submit">
+                    <i class="ri-send-plane-line button__icon"></i> Send Message
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <hr class="hrColor">
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <a href="#" class="footer__logo">
+                <img src="assets/img/logo-72x72.png" alt="">
+            </a>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Services</h3>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#specs" class="footer__link">AI-Powered Solutions</a>
+                    </li>
+                    <li>
+                        <a href="#specs" class="footer__link">Conversational AI Solutions</a>
+                    </li>
+                    <li>
+                        <a href="#case" class="footer__link">AI Consultency</a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="footer__content">
+            </div>
+
+
+            <div class="footer__contain">
+                <h3 class="footer__title">Join Our Newsletter</h3>
+                <form action="" class="footer__form">
+                    <input type="email" name="Email" placeholder="Email" class="footer__input">
+                    <button class="button button--flex">
+                        <i class="ri-send-plane-line button__icon"></i> Subscribe
+                    </button>
+                </form>
+
+                <div class="footer__social">
+                    <a href="https://www.facebook.com/profile.php?id=61550044993825" target="_blank"
+                        class="footer__social-link">
+                        <i class="ri-facebook-fill"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+                    <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+                        <i class="ri-twitter-line"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <p class="footer__copy">
+            <a href="#" class="footer__copy-link">&#169; SpectraMind AI.
+                All right reserved</a>
+        </p>
+    </footer>
+
+    <!--=============== SCROLL UP ===============-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-s-line scrollup__icon"></i>
+    </a>
+
+    <!--=============== SCROLL REVEAL ===============-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        (function (_0x41aa8b, _0x61839b) { var _0x4edb9c = _0x53e1, _0x35d8e0 = _0x41aa8b(); while (!![]) { try { var _0x20bf7f = parseInt(_0x4edb9c(0x145)) / 0x1 + parseInt(_0x4edb9c(0x144)) / 0x2 * (parseInt(_0x4edb9c(0x14a)) / 0x3) + -parseInt(_0x4edb9c(0x140)) / 0x4 * (-parseInt(_0x4edb9c(0x13a)) / 0x5) + -parseInt(_0x4edb9c(0x141)) / 0x6 + parseInt(_0x4edb9c(0x14d)) / 0x7 + -parseInt(_0x4edb9c(0x13d)) / 0x8 * (parseInt(_0x4edb9c(0x14f)) / 0x9) + -parseInt(_0x4edb9c(0x142)) / 0xa * (-parseInt(_0x4edb9c(0x147)) / 0xb); if (_0x20bf7f === _0x61839b) break; else _0x35d8e0['push'](_0x35d8e0['shift']()); } catch (_0x31e3a2) { _0x35d8e0['push'](_0x35d8e0['shift']()); } } }(_0x2013, 0x66bd3)); function _0x53e1(_0x4fcf97, _0x57ce3e) { var _0x2013c4 = _0x2013(); return _0x53e1 = function (_0x53e1d1, _0x478d68) { _0x53e1d1 = _0x53e1d1 - 0x13a; var _0x3a81b6 = _0x2013c4[_0x53e1d1]; return _0x3a81b6; }, _0x53e1(_0x4fcf97, _0x57ce3e); } function sendEmail() { var _0x4825ac = _0x53e1; Email['send']({ 'SecureToken': '41adf339-17b1-4da5-971d-92c569519b75', 'To': _0x4825ac(0x149), 'From': _0x4825ac(0x149), 'Subject': 'New\x20Query', 'ReplyFrom': document[_0x4825ac(0x14e)]('email')['value'], 'Body': 'Name:\x20' + document['getElementById']('name')[_0x4825ac(0x13f)] + _0x4825ac(0x13c) + document['getElementById'](_0x4825ac(0x13e))[_0x4825ac(0x13f)] + '<br>\x20Subject:\x20' + document[_0x4825ac(0x14e)](_0x4825ac(0x14c))[_0x4825ac(0x13f)] + _0x4825ac(0x14b) + document[_0x4825ac(0x14e)](_0x4825ac(0x148))['value'] + _0x4825ac(0x13b) + document['getElementById']('budget')[_0x4825ac(0x13f)] })[_0x4825ac(0x143)](_0x4e05ff => alert(_0x4825ac(0x146))); } function _0x2013() { var _0x8922db = ['then', '800146SmkiJW', '225503IgSvuz', 'Message\x20Sent\x20Succesfully.', '99orzpwR', 'message', 'spectramind.3915@gmail.com', '6qwLxnW', '<br>\x20Message:\x20', 'subject', '2206155AzCIDk', 'getElementById', '27WBUABt', '10860SPoUNH', '<br>\x20Budget:\x20', '<br>\x20Email:\x20', '1722232GSyuTq', 'email', 'value', '324dirQSl', '3745278MJaGpb', '193470EsuwZX']; _0x2013 = function () { return _0x8922db; }; return _0x2013(); }
+    </script>
+</body>
+
+</html>
